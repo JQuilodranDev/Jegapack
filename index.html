@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styless.css">
     <!--Iconos-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
@@ -93,9 +94,25 @@
                 <!--Detalles del producto-->
                 <p>Lorem, ipsum dolor sit amet consectet</p>
                 <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
                 <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
+                <input type="checkbox" id="click">
+                <label for="click" class="btn-file">Ver detalles</label>
+
+                <!--Ver detalles Popup-->
+                <div class="content-popup">
+                    <div class="popup-header">
+                        <h2>Nombre producto</h2>
+                        <label for="click" class="fas fa-window-close"></label>
+                    </div>
+                    <div class="img-popup">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+                    <div class="popup-info">
+                        <h3 class="family">Familia : Nombre-familia</h3>
+                        <a href="#" class="ficha-tecnica">Descargar ficha tecnica</a>
+                    </div>
+                    <div class="line"></div>
+                </div>
             </div>
 
             <!--box-->

@@ -2,8 +2,9 @@ body{
     margin: 0px;
     padding:0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open';
-    background-color: #cc8e40;
-background-image: url("data:image/svg+xml,%3Csvg width='24' height='40' viewBox='0 0 24 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40c5.523 0 10-4.477 10-10V0C4.477 0 0 4.477 0 10v30zm22 0c-5.523 0-10-4.477-10-10V0c5.523 0 10 4.477 10 10v30z' fill='%238f9300' fill-opacity='0.22' fill-rule='evenodd'/%3E%3C/svg%3E"); 
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bf8900' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
 }
 
 *{
@@ -376,6 +377,110 @@ nav #icon{
     border-radius: 20px;
     color:#ffffff;
     background: linear-gradient(120deg,#858C00 60%,#cc8e40);
+}
+
+#click{
+    display: none;
+}
+
+.content-popup{
+    opacity: 0;
+    visibility: hidden;
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    background:white;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+    transition: .3s ease-in;
+}
+
+.popup-header{
+    height: 68px;
+    background:#e0ceb7;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.popup-header h3{
+    color: white;
+    padding-left: 32px;
+    font-weight: normal;
+}
+
+.fa-window-close{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    color:#8f9300;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-info{
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.popup-info h3{
+    font-size: 18px;
+    color:#8f9300;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.popup-info .ficha-tecnica{
+    position: relative;
+    padding: 10px 30px;
+    margin-top:15px;
+    text-decoration: none;
+    border-radius: 30px;
+    background: #8f9300;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+
+.img-popup{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.img-popup img{
+    width: 90%;
+
+}
+.line{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 1px;
+    background: silver;
+}
+
+
+
+
+.btn-file:hover{
+    background: #219150;
+}
+
+#click:checked ~ .content-popup{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
 }
 
 .p-box:hover{
