@@ -203,7 +203,7 @@ nav #icon{
 }
 
 .manual-btn{
-    border: 2px solid #a166f4;
+    border: 2px solid #8f9300;
     padding:5px;
     border-radius: 10px;
     cursor: pointer;
@@ -215,7 +215,7 @@ nav #icon{
 }
 
 .manual-btn:hover{
-    background-color: #a166f4;
+    background-color: #cc8e40;
 }
 
 #radio1:checked ~ .first{
@@ -248,31 +248,31 @@ nav #icon{
 }
 
 .navigation-auto div{
-    border:2px solid #a166f4;
+    border:2px solid #8f9300;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
 }
 
-.navigation-auto div:not(:last_child){
+.navigation-auto div:not(:last-child){
     margin-right: 40px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #a166f4;
+    background: #8f9300;
 }
 
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #a166f4;
+    background: #8f9300;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #a166f4;
+    background: #8f9300;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #a166f4;
+    background: #cc8e40;
 }
 
 /*Sección de productos*/
@@ -319,6 +319,7 @@ nav #icon{
     padding: 8px 20px;
     margin:5px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .products ul li.active{
@@ -377,6 +378,7 @@ nav #icon{
     border-radius: 20px;
     color:#ffffff;
     background: linear-gradient(120deg,#858C00 60%,#cc8e40);
+    cursor: pointer;
 }
 
 #click{
@@ -404,9 +406,9 @@ nav #icon{
 }
 
 .popup-header h3{
-    color: white;
+    color: #8f9300;
     padding-left: 32px;
-    font-weight: normal;
+    font-weight: 900;
 }
 
 .fa-window-close{
@@ -682,7 +684,7 @@ footer{
 
 .list-footer li a{
     text-decoration: none;
-    color:#fff;
+    color: #8f9300;
     font-size: 20px;
     font-weight: bold;
     padding:20px;
@@ -690,7 +692,7 @@ footer{
 }
 
 .list-footer li a:hover{
-    color :#6b60ec;
+    color :#cc8e40;
 }
 
 .social-media {
