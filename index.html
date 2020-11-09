@@ -5,72 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jega</title>
-    <link rel="stylesheet" href="assets/styless.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!--Iconos-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
-    <!--Sección principal-->
-    <section class="main">
-        <!--Navegación-->
-        <nav>
-            <!--Logo-->
-            <img src="images/jega-icon.png" alt="">
-            <!--Bar-icon-->
-            <div class="toogle"></div>
-            <!--Menu principal-->
-            <ul class="menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <label id="icon">
-                <i class="fas fa-bars"></i>
-            </label>
-            <input type="text">
-        </nav>
-        <div class="banner-slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+    <!--Header principal-->
+    <header class="header">
+        <!--Elementos fuera del nav-->
+        <!--Logo-->
+        <a href="#" class="header__logo">Jegapack</a>
+        <!--icono de barras -->
+        <ion-icon name="menu" class="header__toggle" id="nav-toggle"></ion-icon>
+        
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
 
-                <!--Slider de imagenes-->
-                <div class="slide first">
-                    <img src="images/1.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/3.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/4.jpg" alt="">
+                <ion-icon name="close-circle-outline" class="nav__close" id="nav-close"></ion-icon>
+                <!--Datos de la marca-->
+                <div class="nav__profile">
+                    <div class="nav__img">
+                        <img src="assets/images/jega-icon.png" alt="">
+                    </div>
+                    <div class="nav__info">
+                        <a href="#" class="nav__name">Jegapack</a>
+                        <span class="nav__slogan"></span>
+                    </div>
                 </div>
 
-                <!--Navegación automatica-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Sobre nosotros</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Proyectos</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__social">
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="nav__social-icon"><ion-icon name="logo-instagram"></ion-icon></i></a>
                 </div>
             </div>
-            <!--Navegación manual-->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+        </nav>
+    </header>
+
+    <div class="banner-slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--Slider de imagenes-->
+            <div class="slide first">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/IMG_0337.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/4.jpg" alt="">
+            </div>
+
+            <!--Navegación automatica-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
         </div>
-    </section>
+        <!--Navegación manual-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
     <!--Sección Productos-->
     <section class="products">
         <!--Cabecera-->
@@ -79,7 +100,7 @@
         </div>
         <!--Filtro de productos-->
         <ul>
-            <li class="list-filter active">Todos</li>
+            <li class="list-filter">Todos</li>
             <li class="list-filter">Maderas</li>
             <li class="list-filter">Carton</li>
             <li class="list-filter">Plastico</li>
@@ -345,8 +366,11 @@
         </div>
         <p class="copyrights">&copy; 2020 Jegapack | Diseñado por Jaime Quilodrán</p>
     </footer>
-    <script src="js/automatic_slider.js" text="text/javascript"></script>
-
+    <script src="assets/js/automatic_slider.js" text="text/javascript"></script>
+    <!--Ion Icons-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--Menu Js-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
