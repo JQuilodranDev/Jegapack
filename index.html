@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jega</title>
+    <title>Jegapack</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <!--Iconos-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
@@ -19,7 +19,7 @@
         <a href="#" class="header__logo">Jegapack</a>
         <!--icono de barras -->
         <ion-icon name="menu" class="header__toggle" id="nav-toggle"></ion-icon>
-        
+
         <nav class="nav" id="nav-menu">
             <div class="nav__content bd-grid">
 
@@ -31,344 +31,245 @@
                     </div>
                     <div class="nav__info">
                         <a href="#" class="nav__name">Jegapack</a>
-                        <span class="nav__slogan"></span>
+                        <span class="nav__slogan">Maderas y Embalajes</span>
                     </div>
                 </div>
 
 
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Sobre nosotros</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Proyectos</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre nosotros</a></li>
+                        <li class="nav__item"><a href="#products" class="nav__link">Productos</a></li>
+                        <li class="nav__item"><a href="#proyects" class="nav__link">Proyectos</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
                     </ul>
                 </div>
 
                 <div class="nav__social">
-                    <a href="#" class="nav__social-icon"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                    <a href="#" class="nav__social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#" class="nav__social-icon"><ion-icon name="logo-instagram"></ion-icon></i></a>
+                    <a href="#" class="nav__social-icon">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="#" class="nav__social-icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#" class="nav__social-icon">
+                        <ion-icon name="logo-instagram"></ion-icon></i>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="banner-slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-
-            <!--Slider de imagenes-->
-            <div class="slide first">
-                <img src="assets/images/1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/images/2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/images/3.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="images/4.jpg" alt="">
-            </div>
-
-            <!--Navegación automatica-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-        </div>
-        <!--Navegación manual-->
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-    </div>
-    <!--Sección Productos-->
-    <section class="products">
-        <!--Cabecera-->
-        <div class="p-heading">
-            <h3>Productos</h3>
-        </div>
-        <!--Filtro de productos-->
-        <ul>
-            <li class="list-filter">Todos</li>
-            <li class="list-filter">Maderas</li>
-            <li class="list-filter">Carton</li>
-            <li class="list-filter">Plastico</li>
-            <li class="list-filter">Zunchos</li>
-        </ul>
-        <!--Contenedor de productos-->
-        <div class="products-container">
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <!--Boton de ver ficha-->
-                <input type="checkbox" id="click">
-                <label for="click" class="btn-file">Ver detalles</label>
-
-                <!--Ver detalles Popup-->
-                <div class="content-popup">
-                    <div class="popup-header">
-                        <h3>Nombre producto</h3>
-                        <label for="click" class="fas fa-window-close"></label>
-                    </div>
-                    <div class="img-popup">
-                        <img src="https://via.placeholder.com/250x180" alt="">
-                    </div>
-                    <div class="popup-info">
-                        <h3 class="family">Familia : Nombre-familia</h3>
-                        <a href="#" class="ficha-tecnica">Descargar ficha tecnica</a>
-                    </div>
-                    <div class="line"></div>
+    <!--Seccion Img Slider-->
+    <div class="banner__slider">
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="assets/images/" alt="">
+                <div class="info">
+                    <h2>Jegapack</h2>
+                    <h3>Maderas y embalajes</h3>
                 </div>
             </div>
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
+            <div class="slide">
+                <img src="2.jpg" alt="">
+                <div class="info">
+                    <h2>Maderas</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
             </div>
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
+            <div class="slide">
+                <img src="3.jpg" alt="">
+                <div class="info">
+                    <h2>Plasticos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
             </div>
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
+            <div class="slide">
+                <img src="4.jpg" alt="">
+                <div class="info">
+                    <h2>Carton</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
             </div>
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
+            <div class="slide">
+                <img src="5.jpg" alt="">
+                <div class="info">
+                    <h2>Zunchos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
             </div>
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
             </div>
-
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
-            </div>
-
-            <!--box-->
-            <div class="p-box">
-                <!--imagen de p-box-->
-                <img src="https://via.placeholder.com/250x180" alt="">
-                <!--Detalles del producto-->
-                <p>Lorem, ipsum dolor sit amet consectet</p>
-                <!--Precio-->
-                <a href="#" class="price">$CLP 5000</a>
-                <!--Boton de ver ficha-->
-                <a href="#" class="btn-file">Ver detalles</a>
+        </div>
+    </div>
+    <section class="about__section">
+        <div class="about">
+            <div class="inner-section">
+                <h1>Sobre nosostros</h1>
+                <p class="text">
+                    JEGAPACK, es una empresa familiar que nace en el año 2010 con Distribución y Venta directa de
+                    materiales, herramientas y soluciones para embalajes. Desde el año 2013 incorporamos la Fabricación
+                    de Embalajes rígidos, cajones de madera y pallet, a medida. Durante el 2015 nos concentramos en dar
+                    un valor agregado a nuestro servicio realizando nosotros todo lo que conlleva el proceso de
+                    Embalaje, además incorporamos el servicio de madera Fumigada según la norma fitosanitaria NIMF15.
+                </p>
+                <div class="skills">
+                    <button>Contactanos</button>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <main id="main">
+        <!--Sección Productos-->
+
+
+        <!--Categoria de productos central-->
+        <section class="category__section section" id="category">
+            <div class="tab__list">
+                <div class="title__container tabs">
+                    <div class="section__titles category__titles">
+                        <div class="section__title filter-btn" data-id="Todos">
+                            <span class="dot"></span>
+                            <h1 class="primary__title">Todos</h1>
+                        </div>
+                    </div>
+                    <div class="section__titles category__titles">
+                        <div class="section__title filter-btn" data-id="Madera">
+                            <span class="dot"></span>
+                            <h1 class="primary__title">Madera</h1>
+                        </div>
+                    </div>
+                    <div class="section__titles category__titles">
+                        <div class="section__title filter-btn" data-id="Plastico">
+                            <span class="dot"></span>
+                            <h1 class="primary__title">Plastico</h1>
+                        </div>
+                    </div>
+                    <div class="section__titles category__titles">
+                        <div class="section__title filter-btn" data-id="Carton">
+                            <span class="dot"></span>
+                            <h1 class="primary__title">Carton</h1>
+                        </div>
+                    </div>
+                    <div class="section__titles category__titles">
+                        <div class="section__title filter-btn" data-id="Zunchos">
+                            <span class="dot"></span>
+                            <h1 class="primary__title">Zunchos</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__container">
+                    <div class="category__center">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
     <!--seccción sobre nosotros-->
-    <section class="about">
-        <!--Texto principal-->
-        <div class="about-text">
-            <h3>Nuestra empresa</h3>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, cupiditate.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptate exercitationem laudantium
-                illo tenetur sapiente ipsa eius non labore earum, atque cumque, quaerat placeat nihil amet vero quod!
-                Voluptatibus tempora rem eius doloremque. Ullam aspernatur enim id repudiandae doloremque magni
-                perspiciatis cupiditate esse neque delectus nam laudantium expedita, unde odio.</p>
+
+
+    <!--Sección proyectos-->
+    <section class="projects">
+        <div class="project-header">
+            <h1>Proyectos</h1>
         </div>
-        <!--img sobre nosotros-->
-        <div class="about-img"><img src="images/about.jpg" alt=""></div>
+        <div class="project-container">
+            <div class="project-box">
+                <div class="img-project">
+                    <img src="assets/images/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="img-project">
+                    <img src="assets/images/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="img-project">
+                    <img src="assets/images/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="img-project">
+                    <img src="assets/images/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </section>
-    <!--Sección formulario de contacto-->
-    <section class="contact">
-        <!--Caja de contacto-->
+
+    <section id="contact">
+        <!--socail----------->
+        
+        <!--contact-box------------->
         <div class="contact-box">
-            <div class="c-heading">
-                <h1>Contacto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, asperiores.</p>
-            </div>
-            <div class="c-inputs">
-                <input type="text" placeholder="Nombre Completo">
-                <input type="email" placeholder="Correo electronico">
-                <textarea name="message" placeholder="Escribe un mensaje"></textarea>
-                <!--Botón de envio-->
-                <button>Enviar</button>
-            </div>
+        <!--heading---------->
+        <div class="c-heading">
+        <h1>Contactanos</h1>
+        <p>En caso de cualquier duda o consulta</p>
         </div>
-        <!--mapa-->
+        <!--inputs------------------>
+        <div class="c-inputs">
+        <form>
+        <input type="text" placeholder="Nombre"/>	
+        <input type="email" placeholder="ejemplo@gmail.com"/>
+        <textarea name="message" placeholder="....."></textarea>
+        <!--sumbit-btn----------->
+        <button>Enviar</button>
+        </form>
+        </div>
+            
+        </div>
+        <!--map------------------->
         <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.328375463768!2d-70.6493919852161!3d-33.49283268076177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662daca3e44b481%3A0x37f6ad9bfe8fb049!2sSan%20Francisco%204095%2C%20San%20Miguel%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1603567955248!5m2!1ses-419!2scl"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1701.5252574812218!2d74.31603229143637!3d31.46779655679461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906abd2d8f2db%3A0x2d4bd93a1eb25b41!2sArfa%20Technologies!5e0!3m2!1sen!2s!4v1596774150754!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	
         </div>
-    </section>
+        </section>
+
+
     <footer>
         <ul class="list-footer">
             <li><a href="#">|Home</a></li>
-            <li><a href="#">Productos</a></li>
             <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Proyectos</a></li>
             <li><a href="#">Contacto|</a></li>
         </ul>
         <div class="social-media">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="nav__social-icon">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="#" class="nav__social-icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" class="nav__social-icon">
+                <ion-icon name="logo-instagram"></ion-icon></i>
+            </a>
         </div>
         <p class="copyrights">&copy; 2020 Jegapack | Diseñado por Jaime Quilodrán</p>
     </footer>
     <script src="assets/js/automatic_slider.js" text="text/javascript"></script>
     <!--Ion Icons-->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--Projects Sections-->
+    <script src="assets/js/projects.js"></script>
+    <!--Products-->
+    <script src="assets/js/products.js"></script>
+    <!--Glide Js-->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <!--Menu Js-->
     <script src="assets/js/main.js"></script>
 </body>

@@ -1,0 +1,59 @@
+.projects{
+   
+
+    .project-container{
+        display: flex;
+        height: 500px;
+        width: 100%;
+        z-index: 100;
+
+        .project-box{
+            position: relative;
+            width: 25%;
+            height: 100%;
+            overflow: hidden;
+            border-right: 10px solid #111;
+
+            &:last-child{
+                border-right: none;
+            }
+
+            .img-project{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                opacity: 0.5;
+                filter: grayscale(1);
+
+                &.active{
+                    position: fixed;
+                    top:100px;
+                    padding: 10 20px;
+                    left: 100px;
+                    height: calc(100% - 200px);
+                    width:  calc(100% - 200px);
+                    z-index: 1000;
+                    opacity: 1;
+                    filter: grayscale(0);
+                }
+
+                &:hover{
+                    opacity: 1;
+                    filter: grayscale(0);
+                }
+
+                & img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
