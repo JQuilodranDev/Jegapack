@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
 .banner__slider {
+  border: 2px solid green;
   padding-top: 100px;
   display: flex;
   height: 90vh;
@@ -173,6 +174,7 @@
 .about__section {
   min-height: 100vh;
   display: flex;
+  border: 2px solid red;
   align-items: center;
   justify-content: center;
   background-color: #f1f1f1;
@@ -257,6 +259,102 @@
     width: 160px;
   }
 }
+@media (max-width: 552px) {
+  .category__section {
+    width: 100% !important;
+  }
+  .category__section .category__center {
+    grid-template-columns: 1fr !important;
+  }
+  .category__section .category__center .product {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .category__section .category__center .product .product__header {
+    height: 9rem;
+    width: 100%;
+  }
+  .category__section .category__center .product .product__footer {
+    padding: 7px;
+  }
+}
+@media (max-width: 750px) {
+  .title__container {
+    flex-direction: column;
+    padding: 0.05rem;
+  }
+  .title__container h1 {
+    font-size: 20px !important;
+    font-weight: inherit;
+  }
+
+  .category__center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+
+  .product {
+    width: 58rem;
+  }
+}
+@media (max-width: 866px) {
+  .category__section {
+    width: 90% !important;
+  }
+  .category__section .category__center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+  .category__section .product {
+    width: 30rem;
+  }
+  .category__section .product .product__header {
+    height: 10rem;
+    padding: 1px;
+  }
+  .category__section .product .product__footer {
+    padding: 7px;
+  }
+  .category__section .product .product__footer h3 {
+    padding: 1rem 2rem;
+  }
+  .category__section .product .product__footer .product__btn {
+    width: 150px;
+    height: 45px;
+  }
+}
+@media (min-width: 999px) {
+  .category__center {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem 1rem;
+  }
+  .category__center .product {
+    width: 18rem;
+  }
+  .category__center .product .product__header {
+    padding: 1rem;
+  }
+  .category__center .product .product__footer .product__btn {
+    width: 145px;
+  }
+}
+@media (min-width: 1008px) {
+  .category__center {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem 1rem;
+  }
+  .category__center .product {
+    width: 18rem;
+  }
+  .category__center .product .product__header {
+    padding: 1rem;
+  }
+  .category__center .product .product__footer .product__btn {
+    width: 145px;
+  }
+}
 .category__section {
   background-color: #ffffff;
   box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
@@ -274,7 +372,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 6rem;
-  padding: 2rem 0;
+  padding: 1rem 9rem;
 }
 
 .section__title {
@@ -292,13 +390,16 @@
   padding-left: 0.5rem;
   transition: opacity 0.3 ease-in-out;
 }
+.section__title .active span.dot {
+  opacity: 1;
+}
 
 span.dot {
   opacity: 0.6;
   padding: 0.45rem;
   position: relative;
+  border: 1px solid black;
   cursor: pointer;
-  border: black;
   transition: opacity 0.3s ease-in-out;
 }
 span.dot::before {
@@ -308,7 +409,8 @@ span.dot::before {
   left: 0;
   right: 0;
   bottom: 0;
-  border: black;
+  border: 1px solid var(--dark-color);
+  background-color: var(--dark-color);
   margin: 1px;
   opacity: 0.6;
 }
@@ -488,7 +590,7 @@ span.dot::before {
 }
 
 .header {
-  width: 100%;
+  width: var(--body-width);
   height: var(--header-height);
   position: fixed;
   top: 0;
@@ -610,54 +712,47 @@ span.dot::before {
     height: 32px;
   }
 }
-.projects .project-container {
-  display: flex;
-  height: 500px;
-  width: 100%;
-  z-index: 100;
-}
-.projects .project-container .project-box {
+.projects {
   position: relative;
-  width: 25%;
-  height: 100%;
-  overflow: hidden;
-  border-right: 10px solid #111;
-}
-.projects .project-container .project-box:last-child {
-  border-right: none;
-}
-.projects .project-container .project-box .img-project {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+}
+.projects video {
+  padding-left: 500px;
+  width: 70%;
+  height: 598px;
+  object-fit: fill;
+}
+.projects .project__navigation {
+  position: absolute;
+  display: flex;
+  bottom: 5px;
+  left: 53%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects .project__navigation li {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 3px 3px 0;
+  opacity: 0.7;
   transition: 0.5s;
-  opacity: 0.5;
-  filter: grayscale(1);
 }
-.projects .project-container .project-box .img-project.active {
-  position: fixed;
-  top: 100px;
-  padding: 10 20px;
-  left: 100px;
-  height: calc(100% - 200px);
-  width: calc(100% - 200px);
-  z-index: 1000;
+.projects .project__navigation li:hover {
   opacity: 1;
-  filter: grayscale(0);
 }
-.projects .project-container .project-box .img-project:hover {
-  opacity: 1;
-  filter: grayscale(0);
+.projects .project__navigation li img {
+  width: 70px;
+  transition: 0.5s;
 }
-.projects .project-container .project-box .img-project img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.projects .project__navigation li img:hover {
+  width: 95px;
 }
 
 @media screen and (max-width: 670px) {
@@ -720,9 +815,8 @@ footer .copyrights:hover {
 }
 
 #contact {
+  border: 2px solid lightblue;
   position: relative;
-  left: 60%;
-  top: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
@@ -873,6 +967,9 @@ footer .copyrights:hover {
 /*Variables css*/
 :root {
   --header-height:3rem;
+  --body-width:95%;
+  --body--margin:0;
+  --body-padding:0;
 }
 
 /*Colores*/
@@ -908,6 +1005,9 @@ footer .copyrights:hover {
 }
 
 body {
+  overflow-x: hidden;
+  margin: var(--body--margin);
+  padding: var(--body-padding);
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -935,7 +1035,6 @@ img {
 }
 
 .bd-grid {
-  max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
   margin-left: 1.5rem;

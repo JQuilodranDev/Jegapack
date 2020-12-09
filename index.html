@@ -184,31 +184,15 @@
 
     <!--Sección proyectos-->
     <section class="projects">
-        <div class="project-header">
-            <h1>Proyectos</h1>
-        </div>
-        <div class="project-container">
-            <div class="project-box">
-                <div class="img-project">
-                    <img src="assets/images/1.jpg" alt="">
-                </div>
-            </div>
-            <div class="project-box">
-                <div class="img-project">
-                    <img src="assets/images/2.jpg" alt="">
-                </div>
-            </div>
-            <div class="project-box">
-                <div class="img-project">
-                    <img src="assets/images/3.jpg" alt="">
-                </div>
-            </div>
-            <div class="project-box">
-                <div class="img-project">
-                    <img src="assets/images/4.jpg" alt="">
-                </div>
-            </div>
-        </div>
+       <video id="video__slider" autoplay muted loop>
+           <source src="assets/videos/JegaProject01.mp4" type="video/mp4">
+       </video>
+       <ul class="project__navigation">
+           <li onclick="videoUrl('assets/videos/JegaProject01.mp4')"><img src="assets/images/caption1.png" alt=""></li>
+           <li onclick="videoUrl('assets/videos/JegaProject02.mp4')"><img src="assets/images/caption2.png" alt=""></li>
+           <li><img src="assets/images/caption1.png" alt=""></li>
+           <li><img src="assets/images/caption1.png" alt=""></li>
+       </ul>
     </section>
 
     <section id="contact">

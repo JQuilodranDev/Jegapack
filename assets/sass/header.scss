@@ -24,7 +24,7 @@
 }
 
 .header{
-    width: 100%;
+    width: var(--body-width);
     height: var(--header-height);
     position:fixed;
     top:0;
