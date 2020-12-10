@@ -13,7 +13,7 @@
                 
                 .product__header{
                     height: 9rem;
-                    width: 100%;
+                    width: 89%;
                 }
 
                 .product__footer{
@@ -55,11 +55,15 @@
     .category__section {
         width: 90% !important;
 
+        .category__container{
+            width: 88%;
+        }
 
         .category__center {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem 1rem;
+            width: 89%;
         }
 
         .product{
@@ -158,12 +162,15 @@
     border-radius: 10px;
 }
 
-
+.tab__list{
+    width: 100%;
+    border:2px solid blue !important;
+}
 .title__container {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 6rem;
     padding: 1rem 9rem;
 }
 
