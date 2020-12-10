@@ -184,44 +184,59 @@
 
     <!--Sección proyectos-->
     <section class="projects">
-       <video id="video__slider" autoplay muted loop>
-           <source src="assets/videos/JegaProject01.mp4" type="video/mp4">
-       </video>
-       <ul class="project__navigation">
-           <li onclick="videoUrl('assets/videos/JegaProject01.mp4')"><img src="assets/images/caption1.png" alt=""></li>
-           <li onclick="videoUrl('assets/videos/JegaProject02.mp4')"><img src="assets/images/caption2.png" alt=""></li>
-           <li><img src="assets/images/caption1.png" alt=""></li>
-           <li><img src="assets/images/caption1.png" alt=""></li>
-       </ul>
+        <video id="video__slider" autoplay muted loop>
+            <source src="assets/videos/JegaProject01.mp4" type="video/mp4">
+        </video>
+        <ul class="project__navigation">
+            <li onclick="videoUrl('assets/videos/JegaProject01.mp4')"><img src="assets/images/caption1.png" alt=""></li>
+            <li onclick="videoUrl('assets/videos/JegaProject02.mp4')"><img src="assets/images/caption2.png" alt=""></li>
+            <li><img src="assets/images/caption1.png" alt=""></li>
+            <li><img src="assets/images/caption1.png" alt=""></li>
+        </ul>
     </section>
 
     <section id="contact">
-        <!--socail----------->
-        
-        <!--contact-box------------->
-        <div class="contact-box">
-        <!--heading---------->
-        <div class="c-heading">
-        <h1>Contactanos</h1>
-        <p>En caso de cualquier duda o consulta</p>
+        <div class="contact__form">
+            <div class="form__area">
+                <div class="animated__fadeInDown">
+                    <h2>Contactanos</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi eveniet repudiandae, labore
+                        ipsam dolorem ex!</p>
+                </div>
+
+                <div class="contact">
+                    <div class="map animated__fadeInLeft">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.618871603505!2d-70.64701538520589!3d-33.51129180802255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da9537363bfd%3A0xbedc8b7c6da97ec2!2sVaras%20Mena%20673%2C%20San%20Miguel%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1607537365435!5m2!1ses-419!2scl"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <form  class="form animated fadeInUp">
+                        <label>
+                            <input type="email"  class="email" id="email" required>
+                            <div class="label email-text">E-mail</div>
+                        </label>
+    
+                        <label>
+                            <input type="text" class="subject" id="subject" required>
+                            <div class="label subject-text">Asunto</div>
+                        </label>
+    
+                        <label>
+                            <textarea class="help-box" id="helpBox" cols="30" rows="10" required></textarea>
+                            <div class="label help-text">Como podemos ayudarte?</div>
+                        </label>
+    
+                        <div class="submit-area">
+                            <input type="submit" id="submit" value="Enviar">
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!--inputs------------------>
-        <div class="c-inputs">
-        <form>
-        <input type="text" placeholder="Nombre"/>	
-        <input type="email" placeholder="ejemplo@gmail.com"/>
-        <textarea name="message" placeholder="....."></textarea>
-        <!--sumbit-btn----------->
-        <button>Enviar</button>
-        </form>
-        </div>
-            
-        </div>
-        <!--map------------------->
-        <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1701.5252574812218!2d74.31603229143637!3d31.46779655679461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906abd2d8f2db%3A0x2d4bd93a1eb25b41!2sArfa%20Technologies!5e0!3m2!1sen!2s!4v1596774150754!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	
-        </div>
-        </section>
+    </section>
 
 
     <footer>
