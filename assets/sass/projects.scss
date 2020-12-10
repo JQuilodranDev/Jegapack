@@ -15,7 +15,7 @@
     .project__navigation{
         position: absolute;
         display: flex;
-        bottom: 5px;
+        bottom: 95px;
         left: 53%;
         transform: translateX(-50%);
         z-index: 100;
@@ -47,5 +47,15 @@
             }
         }
        
+    }
+}
+
+//Media Queries
+@media screen and (max-width:992px){
+    .projects{
+        & video{
+            padding-left: 185px;
+            width: 85%;
+        }
     }
 }

@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
 .banner__slider {
-  border: 2px solid green;
   padding-top: 100px;
   display: flex;
   height: 90vh;
@@ -174,9 +173,9 @@
 .about__section {
   min-height: 100vh;
   display: flex;
-  border: 2px solid red;
   align-items: center;
   justify-content: center;
+  width: var(--body-width);
   background-color: #f1f1f1;
 }
 
@@ -726,7 +725,7 @@ span.dot::before {
 .projects .project__navigation {
   position: absolute;
   display: flex;
-  bottom: 5px;
+  bottom: 95px;
   left: 53%;
   transform: translateX(-50%);
   z-index: 100;
@@ -755,6 +754,12 @@ span.dot::before {
   width: 95px;
 }
 
+@media screen and (max-width: 992px) {
+  .projects video {
+    padding-left: 185px;
+    width: 85%;
+  }
+}
 @media screen and (max-width: 670px) {
   footer .list-footer {
     display: block !important;
@@ -821,6 +826,7 @@ footer .copyrights:hover {
   display: flex;
   justify-content: center;
   transition: 0.5s all ease;
+  background-color: var(--white-color);
 }
 .contact__form .form__area h2 {
   font-weight: 500;
@@ -959,11 +965,17 @@ footer .copyrights:hover {
     width: 100%;
   }
 }
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 /*Fuente principal*/
 /*Variables css*/
 :root {
   --header-height:3rem;
-  --body-width:95%;
+  --body-width:100%;
   --body--margin:0;
   --body-padding:0;
 }
