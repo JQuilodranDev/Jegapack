@@ -598,7 +598,7 @@ span.dot::before {
 }
 
 .header {
-  width: 100%;
+  width: 97%;
   height: var(--header-height);
   position: fixed;
   top: 0;
@@ -1015,7 +1015,6 @@ footer .copyrights:hover {
 /*Base*/
 *, ::before, ::after {
   box-sizing: border-box;
-  border: 2px solid red;
 }
 
 body {
