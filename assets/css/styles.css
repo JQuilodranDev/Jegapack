@@ -4,7 +4,7 @@
 .banner__slider {
   padding-top: 100px;
   display: flex;
-  height: 90vh;
+  height: 61vh;
   justify-content: center;
   align-items: center;
 }
@@ -175,41 +175,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--body-width);
-  background-color: #f1f1f1;
 }
-
-.about {
-  background: url(/assets/images/about.jpg) no-repeat left;
+.about__section .about {
+  background: url(/assets/images/IMG_0403.jpg) no-repeat left;
   background-size: 55%;
-  background-color: #fdfdfd;
   overflow: hidden;
   padding: 100px 0;
 }
-
-.inner-section {
+.about__section .about .inner__section {
   width: 55%;
   float: right;
-  background-color: #fdfdfd;
   padding: 140px;
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--white-color);
+  box-shadow: 10px 10px 8px var(--dark-color);
 }
-
-.inner-section h1 {
+.about__section .about .inner__section h1 {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 900;
 }
-
-.text {
+.about__section .about .inner__section .text {
   font-size: 13px;
-  color: #545454;
+  color: var(--dark-color);
   line-height: 30px;
   text-align: justify;
   margin-bottom: 40px;
 }
-
-.skills button {
+.about__section .about .inner__section .skills button {
   font-size: 22px;
   text-align: center;
   letter-spacing: 2px;
@@ -217,20 +209,27 @@
   border-radius: 20px;
   padding: 8px;
   width: 200px;
-  background-color: #00999c;
+  background-color: var(--first-color);
   color: white;
   cursor: pointer;
 }
-
-.skills button:hover {
+.about__section .about .inner__section .skills button:hover {
   transition: 1s;
-  background-color: #ecf5f5;
-  color: #00999c;
+  background-color: var(--dark-color);
+  color: var(--first-color);
 }
 
+/* Media Queries
+
+
+*/
 @media screen and (max-width: 1200px) {
-  .inner-section {
-    padding: 80px;
+  .about {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .about .inner__section {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -238,8 +237,7 @@
     background-size: 100%;
     padding: 100px 40px;
   }
-
-  .inner-section {
+  .about .inner__section {
     width: 100%;
   }
 }
@@ -247,12 +245,11 @@
   .about {
     padding: 0;
   }
-
-  .inner-section {
-    padding: 60px;
+  .about .inner__section {
+    width: 70%;
+    padding: 140px;
   }
-
-  .skills button {
+  .about .inner__section .skills button {
     font-size: 19px;
     padding: 5px;
     width: 160px;
@@ -734,6 +731,20 @@ span.dot::before {
   .projects video {
     padding-left: 185px;
     width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects video {
+    padding-left: 90px;
+    width: 90%;
+    height: 750px;
+  }
+  .projects .project__navigation {
+    bottom: 70px;
+    left: 53%;
+  }
+  .projects .project__navigation li img {
+    height: 55px;
   }
 }
 @media screen and (max-width: 670px) {
