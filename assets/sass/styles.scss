@@ -1,6 +1,6 @@
 
 //Imports
-@import "img-slider.scss";
+@import "banner.scss";
 @import "about.scss";
 @import "products.scss";
 @import "header.scss";
@@ -8,7 +8,7 @@
 @import "footer.scss";
 @import "contact.scss";
 @import "pre-loader.scss";
-
+    
 
 
 
@@ -55,6 +55,7 @@
 
 *,::before,::after{
     box-sizing: border-box;
+
 }
 
 body{
@@ -83,12 +84,24 @@ img{
     height: auto;
 }
 
+section{
+    scroll-snap-align: center;
+}
+
+.sections__container{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
 .bd-grid{
     display: grid;
     grid-template-columns: 100%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+
+
 
 
 

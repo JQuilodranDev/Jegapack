@@ -35,22 +35,6 @@ const displayProductsItems= items =>{
                 Ver
             </button></a>
             <!--Ver detalles Popup-->
-            <div class="content-popup">
-                <div class="popup-header">
-                    <h3>${product.title}</h3>
-                    <label for="click" class="fas fa-window-close"></label>
-                </div>
-                <div class="img-popup">
-                    <img src=${product.image} alt="">
-                </div>
-                <div class="popup-info">
-                    <h3 class="family">Catogoria : ${product.category}</h3>
-                    <h4 class="family">Medidas : ${product.format}</h4>
-                    <h4 class="family">Estructura : ${product.structure}</h4>
-                    <a href="#" class="ficha-tecnica">Descargar ficha tecnica</a>
-                </div>
-                <div class="line"></div>
-            </div>
         </div>
     </div>`
         );
